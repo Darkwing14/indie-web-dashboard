@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+  body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<div id="navbar"></div>
+<script>
+fetch("https://darkwing14.github.io/indie-web-dashboard/navbar.html")
+  .then(r => r.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
+</script>
+<p>Source of Iframe: </p> <a href="https://darkwing14.github.io/IndieWeb/city/notetaker">https://darkwing14.github.io/IndieWeb/city/notetaker</a>
+<iframe 
+  src="https://darkwing14.github.io/IndieWeb/city/notetaker"
+  style="width: 100%; aspect-ratio: 4 / 3; border: none;"
+></iframe>
+</body>
+</html>
