@@ -1,1 +1,24 @@
-<html><head><style></style></head><body><p>Sorry, but this is WIP.</p></body></html>
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+  body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<div id="navbar"></div>
+<script>
+fetch("https://darkwing14.github.io/IndieWeb/navbar.html")
+  .then(r => r.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
+</script>
+<p>Click a navbar element!</p>
+</body>
+</html>
